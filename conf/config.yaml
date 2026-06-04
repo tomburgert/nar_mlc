@@ -1,0 +1,45 @@
+defaults:
+  - base_config
+  - _self_  
+  - override hydra/hydra_logging: disabled  
+  - override hydra/job_logging: disabled
+
+hydra:  
+  output_subdir: null  
+  run:  
+    dir: .
+  sweep:
+    dir: /data/tomburgert/data/hydra_multirun2
+
+params:
+  seed: 1
+  cuda_no: 2
+  num_workers: 4
+  batch_size: 128
+  pin_memory: true
+  eval_on_test: true
+  max_epochs: 30
+  dataset: BigEarthNetV2
+  addn: 0.0
+  subn: 0.0
+dataaug:
+  train_augmentation: 'none'
+  test_augmentation: 'none'
+model:
+  name: resnet18
+  pretrained: false
+dataset:
+  intersection_8country: false
+optim: # useless
+  min_lr: 0.001
+  weight_decay: 0.01
+  gamma: 0.1
+  milestones: [10, 20]
+logging:
+  save_checkpoint: false
+tracking:
+  should_track_train_probs: false
+  should_track_val_probs: false
+  should_track_labels: false
+  should_track_weights: false
+  should_track_noise_statistics: false

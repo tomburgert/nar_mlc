@@ -1,0 +1,54 @@
+BigEarthNetV2:
+  classification: multi_label
+  lmdb_path: /data_read_only/BigEarthNet/BigEarthNet-V2/BENv2.lmdb
+  labels_path: /data_read_only/BigEarthNet/BigEarthNet-V2/metadata.parquet
+  train_csv: /data/tomburgert/bigearthnet_stats/benv2_splits/all_train.csv
+  val_csv: /data/tomburgert/bigearthnet_stats/benv2_splits/val_train.csv
+  test_csv: /data/tomburgert/bigearthnet_stats/benv2_splits/all_test.csv
+  num_classes: 19
+  num_channels: 10
+DeepGlobe:
+  classification: multi_label
+  lmdb_path: /data_read_only/deepGlobe/ML_DeepGlobe/patches.lmdb
+  labels_path: /data_read_only/deepGlobe/ML_DeepGlobe/labels.parquet
+  train_csv: /data_read_only/deepGlobe/ML_DeepGlobe/splits/deepglobe_version2_train.csv
+  val_csv: /data_read_only/deepGlobe/ML_DeepGlobe/splits/deepglobe_version2_val.csv
+  test_csv: /data_read_only/deepGlobe/ML_DeepGlobe/splits/deepglobe_version2_test.csv
+  num_classes: 6
+  num_channels: 3
+UCMerced:
+  classification: multi_label
+  lmdb_path: /data_read_only/UCMerced
+  labels_path: /data_read_only/UCMerced/labels.parquet
+  train_csv: /data_read_only/UCMerced/train.csv
+  val_csv: /data_read_only/UCMerced/val.csv
+  test_csv: /data_read_only/UCMerced/test.csv
+  num_classes: 17
+  num_channels: 3
+BirdsSierraNev:
+  classification: multi_label
+  lmdb_path: /data_read_only/BirdsSierraNev/patches.lmdb
+  labels_path: /data_read_only/BirdsSierraNev/labels.parquet
+  train_csv: /data_read_only/BirdsSierraNev/train.csv
+  val_csv: /data_read_only/BirdsSierraNev/val.csv
+  test_csv: /data_read_only/BirdsSierraNev/test.csv
+  num_classes: 19
+  num_channels: 1
+MIMICCXR:
+  classification: multi_label
+  lmdb_path: /data_read_only/MIMIC-CXR/patches.lmdb
+  labels_path: /data_read_only/MIMIC-CXR/labels.parquet
+  train_csv: /data_read_only/MIMIC-CXR/train.csv
+  val_csv: /data_read_only/MIMIC-CXR/val.csv
+  test_csv: /data_read_only/MIMIC-CXR/test.csv
+  num_classes: 13
+  num_channels: 1
+AID-ML:
+  classification: multi_label
+  lmdb_path: None
+  labels_path: None
+  train_csv: train
+  val_csv: val
+  test_csv: test
+  num_classes: 17
+  num_channels: 3
