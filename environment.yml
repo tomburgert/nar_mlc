@@ -1,0 +1,28 @@
+name: nar_mlc
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pytorch=2.4.*
+  - torchvision=0.19.*
+  - pytorch-cuda=12.1
+  - pytorch-lightning
+  - torchmetrics
+  - hydra-core
+  - omegaconf
+  - pyyaml
+  - numpy
+  - pandas
+  - scikit-learn
+  - albumentations
+  - opencv
+  - safetensors
+  - datasets
+  - pyarrow
+  - fastparquet
+  - lmdb
+  - python-lmdb
+  - bigearthnet-patch-interface
+  - pillow
